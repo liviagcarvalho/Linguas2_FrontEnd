@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.section`
   background-color: #32004b;
@@ -25,15 +26,15 @@ const Subtitle = styled.p`
   line-height: 1.6;
 `;
 
-const Button = styled.button`
+const RegisterLink = styled(Link)`
   background: white;
   color: #32004b;
   font-size: 1.1rem;
   font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 8px;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
   transition: all 0.3s ease;
 
   &:hover {
@@ -50,7 +51,7 @@ const ChamadaParaAcao: React.FC = () => {
         Domine o inglês corporativo e conquiste a carreira que você merece! <br />
         Inscreva-se agora e dê o próximo passo rumo ao seu sucesso.
       </Subtitle>
-      <Button>RESGISTRE-SE AQUI</Button>
+      <RegisterLink to="/register">REGISTRE-SE AQUI</RegisterLink>
     </Container>
   );
 };
