@@ -3,7 +3,7 @@ import styled from "styled-components";
 const SectionContainer = styled.section`
   width: 100%;
   margin-top: 0;
-  min-height: 470px;
+  min-height: 450px;
   background: linear-gradient(to bottom, #300244 3%, #2f0147 80%, #fffafb 100%);
   color: white;
   padding: 1rem 0rem 6rem 1rem;
@@ -19,7 +19,7 @@ const StatsGrid = styled.div`
   flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 4rem auto;
   padding: 0 1rem;
   gap: 2rem;
   box-sizing: border-box;

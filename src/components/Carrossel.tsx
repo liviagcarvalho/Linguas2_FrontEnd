@@ -10,7 +10,7 @@ import AulaCard from "./AulaCard";
 // Título em fundo branco
 const TitleWrapper = styled.div`
   background: white;
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 4rem 3rem 1rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 `;
