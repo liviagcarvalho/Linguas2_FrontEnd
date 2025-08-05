@@ -1,9 +1,10 @@
+// Header.tsx
+
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-
-//STYLED COMPONENETS 
+// STYLED COMPONENTS
 const HeaderContainer = styled.header`
   width: 100%;
   max-width: 100vw;
@@ -27,8 +28,7 @@ const Nav = styled.nav`
   display: flex;
   gap: 2rem;
 
-  @media (max-width: 768px) { 
-    // Responsive design for smaller screens
+  @media (max-width: 768px) {
     gap: 1rem;
     flex-wrap: wrap;
   }
@@ -46,14 +46,13 @@ const NavLink = styled(Link)`
 
 const ButtonGroup = styled.div`
   display: flex;
-  align-items: center;  /* garante alinhamento vertical */
+  align-items: center;
   gap: 1rem;
 
   @media (max-width: 768px) {
     gap: 0.5rem;
   }
 `;
-
 
 const LoginLink = styled(Link)`
   color: #6a0dad;
@@ -64,18 +63,17 @@ const LoginLink = styled(Link)`
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0.45rem 0; /* mesmo padding vertical do RegisterButton */
+  padding: 0.45rem 0;
 
   &:hover {
     text-decoration: underline;
   }
 `;
 
-
-const RegisterButton = styled.button`
+const RegisterLink = styled(Link)`
   background-color: #6a0dad;
   color: white;
-  border: none;
+  text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
@@ -90,7 +88,7 @@ const RegisterButton = styled.button`
   }
 `;
 
-
+// COMPONENT
 const Header = () => {
   return (
     <HeaderContainer>
@@ -104,7 +102,7 @@ const Header = () => {
 
       <ButtonGroup>
         <LoginLink to="/login">Login</LoginLink>
-        <RegisterButton>Registre-se</RegisterButton>
+        <RegisterLink to="/register">Registre-se</RegisterLink>
       </ButtonGroup>
     </HeaderContainer>
   );
